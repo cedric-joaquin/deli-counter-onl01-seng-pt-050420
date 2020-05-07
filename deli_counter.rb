@@ -6,9 +6,9 @@ def line(customers)
       current_line += "#{counter}. #{customers[counter - 1]} "
       counter += 1 
     end
-    current_line
+    puts current_line
   else 
-    "The line is currently empty."
+    puts "The line is currently empty."
   end
 end
   
