@@ -1,7 +1,14 @@
-def line(people_in_line)
+def line(customers)
   current_line = "The line is currently: "
-  if people_in_line > 0 
+  if customers > 0 
     counter = 1
-    while counter < people_in_line.size do
-      current_line += "#{counter}. #people"
+    while counter < customers.size do
+      current_line += "#{counter}. #{customers[counter - 1]} "
+      counter += 1 
+    end
+    current_line
+  else 
+    "The line is currently empty."
+  end
+end
   
