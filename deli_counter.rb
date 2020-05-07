@@ -19,5 +19,6 @@ end
 
 def now_serving(line, name)
   if line.size > 0
-    line.unshift
+    puts "Currently serving #{line[0]}"
+    line.shift
 end
